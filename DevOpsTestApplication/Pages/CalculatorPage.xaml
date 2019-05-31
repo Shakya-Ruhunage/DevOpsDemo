@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="DevOpsTestApplication.Pages.CalculatorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Enter Number 1"/>
+            <Entry Text="{Binding Number1}" />
+            
+            <Label Text="Enter Number 2"/>
+            <Entry Text="{Binding Number2}"/>
+            
+            <Picker Title="Select an Opertaion" ItemsSource="{Binding Operations}" SelectedItem="{Binding SelectedOperation}" SelectedIndexChanged="{Binding SelectionChanged}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
