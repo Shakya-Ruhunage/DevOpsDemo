@@ -6,29 +6,26 @@ namespace DevOpsTestApplication.Services.CalculatorService
 {
     public class CalculatorService<T> : ICalculatorService<T> 
     {
-        public async Task<T> Calculate(T number1, T number2, Operation operation)
+        public async Task<int> Calculate(int number1, int number2, Operation operation)
         {
-            T result = default(T);
-
-            dynamic param1 = number1;
-            dynamic param2 = number2;
+            int result = 0;
 
            switch(operation)
             {
                 case Operation.Addition:
-                    result = param1 + param2;
+                    result = number1 + number2;
                     break;
                 case Operation.Substraction:
-                    result = param1 - param2;
+                    result = number1 - number2;
                     break;
                 case Operation.Multiply:
-                    result = param1 * param2;
+                    result = number1 * number2;
                     break;
                 case Operation.Devide:
-                    result = param1 / param2;
+                    result = number1 / number2;
                     break;
                 case Operation.Module:
-                    result = param1 % param2;
+                    result = number1 % number2;
                     break;
                 default:
                     break;

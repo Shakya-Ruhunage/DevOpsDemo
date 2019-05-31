@@ -22,5 +22,6 @@
     <Folder Include="Enums\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Services\CalculatorService\" />
+    <Folder Include="Services\ValidatorSerivice\" />
   </ItemGroup>
 </Project>
