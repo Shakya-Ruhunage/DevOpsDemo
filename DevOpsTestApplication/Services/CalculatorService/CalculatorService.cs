@@ -8,7 +8,8 @@ namespace DevOpsTestApplication.Services.CalculatorService
     {
         public async Task<T> Calculate(T number1, T number2, Operation operation)
         {
-            T result;
+            T result = default(T);
+
             dynamic param1 = number1;
             dynamic param2 = number2;
 
@@ -30,7 +31,6 @@ namespace DevOpsTestApplication.Services.CalculatorService
                     result = param1 % param2;
                     break;
                 default:
-                    result = default;
                     break;
             }
 

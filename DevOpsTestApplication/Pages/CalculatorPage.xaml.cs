@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using DevOpsTestApplication.ViewModels;
 using Xamarin.Forms;
 
 namespace DevOpsTestApplication.Pages
@@ -10,6 +10,7 @@ namespace DevOpsTestApplication.Pages
         public CalculatorPage()
         {
             InitializeComponent();
+            BindingContext = new CalculateViewModel();
         }
     }
 }
